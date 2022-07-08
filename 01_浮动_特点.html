@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 特点
+            1.浮动元素会脱离标准流（脱标），在标准流中不占位置
+            2.浮动元素比标准流级别高，覆盖在上层
+            3.下一个浮动元素会在上一个元素的后面进行左右浮动
+            4.块级元素浮动后，一行可显示多个
+            5.行级元素浮动后，可以设置宽高*/
+        .c1{
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            float: left;
+        }
+        .c2{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+        }
+        .c3{
+            background-color: blueviolet;
+        }
+        .c4{
+            height: 200px;
+            background-color: coral;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+
+    <Span class="c3">1111</Span>
+    <Span class="c4">2222</Span>
+</body>
+</html>
