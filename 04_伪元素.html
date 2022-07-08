@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        /* 通过CSS在div前插入一个元素 */
+        .father::before{
+            content: '我是前面的伪元素';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+        /* 通过CSS在div后插入一个元素 */
+        .father::after{
+            content: '我是后面的伪元素';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        我是父元素
+    </div>
+</body>
+</html>

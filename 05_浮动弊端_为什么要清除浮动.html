@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 开始之前 去掉默认样式 */
+        body,ul{
+            margin: 0;
+            padding: 0;            
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        /* 设置li标签的样式 */
+        .nav li{
+            /* display: inline-block;让li元素在一行显示 */
+            float: left;
+            height: 50px;
+            padding: 0 20px;
+            background: pink;
+        }
+        /* 设置a标签的样式 */
+        .nav li a{
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        /* 鼠标悬浮 */
+        .nav li:hover{
+            background-color: black;
+        }
+        /* 主体样式 */
+        .main{
+            height: 300px;
+            width: 2000px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">新闻1</a></li><li><a href="#">新闻1</a></li>
+        <li><a href="#">新闻1</a></li>
+        <li><a href="#">新闻1</a></li>
+    </ul>
+    <!-- 添加一个主要内容
+        浮动后无法撑开父元素的高度 -->
+    <div class="main"></div>
+</body>
+</html>
